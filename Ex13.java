@@ -110,7 +110,7 @@ public class Ex13
         int sum = 0, len = 0;
     
         // Check if sum of complete array is even
-        for (int i = 0; i < arr.length; i++)
+        for (int i = 0; i < arr.length; i++) // **arr supposed to be called a
         {
             sum += a[i];
         }
@@ -123,11 +123,11 @@ public class Ex13
         // Find an index i such the a[i] is odd
         // and compare length of both halfs excluding
         // a[i] to find max length subarray
-        for (int i = 0; i < arr.length; i++)
+        for (int i = 0; i < arr.length; i++) //**arr supposed to be called a
         {
-            if (a[i] % 2 == 1)
+            if (a[i] % 2 == 1) // ***add absolute value. a may have negative numbers.
             {
-                len = Math.max(len, Math.max(arr.length - i - 1, i));
+                len = Math.max(len, Math.max(arr.length - i - 1, i)); //**arr supposed to be called a
             }
         }
     
